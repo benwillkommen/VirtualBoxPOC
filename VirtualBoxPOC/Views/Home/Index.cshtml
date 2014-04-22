@@ -1,0 +1,8 @@
+﻿@model VirtualBoxPOC.Controllers.FileModel
+@using (Html.BeginForm())
+{
+   @Html.LabelFor(m => m.Path)
+   @Html.TextBoxFor(m => m.Path)
+   <input type="submit" value="get file contents"/>
+}
+@Html.Raw(Model.Contents)
